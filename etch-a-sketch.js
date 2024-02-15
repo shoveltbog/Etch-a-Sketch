@@ -1,6 +1,8 @@
-// create div container
-const contain = document.querySelector('body');
+const container = document.querySelector('.container');
 
-const container = document.createElement('div');
-container.setAttribute('id', 'wrapper');
-contain.appendChild(container);
+// create 16 x 16 div grid
+for (var i = 0; i < 16; i++) {
+    const gridDiv = document.createElement('div');
+    gridDiv.classList.add('grid');
+    container.appendChild(gridDiv);
+}
