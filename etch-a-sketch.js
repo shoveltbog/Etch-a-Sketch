@@ -16,3 +16,15 @@ for (let i = 0; i < 16; i++) {
         });
     }
 }
+
+// create button input to set the number of cells
+
+const btn = document.querySelector('body');
+
+const gridButton = document.createElement('button');
+gridButton.innerText = "Input grid size";
+btn.insertBefore(gridButton, container);
+
+
+
+
