@@ -23,6 +23,14 @@ function createGrid(container, rows, columns) {
             rowDiv.appendChild(colDiv);
 
             colDiv.addEventListener('mouseenter', function() {
+                // generate random RGB colour
+                const red = Math.floor(Math.random() * 256);
+                const green = Math.floor(Math.random() * 256);
+                const blue = Math.floor(Math.random() * 256);
+
+                // Set the background color to the generated random color
+                this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+
                 this.classList.add('hovered');
             });
         }
